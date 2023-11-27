@@ -18,9 +18,15 @@ allows commands such as `brew install wget`
 
 `brew install java`
 
+
+
 create hello.java on desktop
+
 `cd ~/Desktop`
+
 `touch hello.java` and open with textedit.app or your favorite note editor.
+
+
 
 inside hello.java
 ```
