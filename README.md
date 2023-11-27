@@ -1,13 +1,13 @@
 # setup-MAC
 ---
 
-### Homebrew package manager
+### Homebrew
 
-## Homebrew
 
-[Homebrew](http://brew.sh/) is a package manager: it's a software used to install other software from the command line. Let's install it!
 
-Open a terminal and run:
+[Homebrew](http://brew.sh/) package manager.
+
+Open terminal and run:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -22,20 +22,20 @@ This will ask for your confirmation (hit `Enter`) and your **macOS user account 
 ![macOS Homebrew installation warning](macos_homebrew_warning.png)
 
 ```bash
-# ⚠️ Only execute these commands if you saw this warning ☝
+# Only execute these commands if you saw this warning
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-If you already have Homebrew, it will tell you so, that's fine, go on.
+If you already have Homebrew, it will tell you so.
 
-Then install some useful software:
+run:
 
 ```bash
 brew update
 ```
 
-If you get a `/usr/local must be writable` error, just run this:
+If you get a `/usr/local must be writable` error, run:
 
 ```bash
 sudo chown -R $USER:admin /usr/local
