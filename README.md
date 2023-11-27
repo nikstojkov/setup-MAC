@@ -9,6 +9,12 @@
 
 ---
 
+### Homebrew package manager
+
+`-c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
+---
+
 ### Java (java version "1.8.0_92" or higher)
 
 `brew install java`
@@ -25,6 +31,26 @@ class HelloWorld {
 
 run `javac hello.java`
 
-if you get an error, visit [Oracle downloads](https://www.oracle.com/uk/java/technologies/downloads/#java21) and download appropriate JDK Dev kit an try again.
+if you get an error, visit [Oracle downloads](https://www.oracle.com/uk/java/technologies/downloads/#java21) and download appropriate JDK Dev kit and try again.
 
 ---
+
+### MariaDB
+
+`brew install mariadb@10.5`
+
+---
+
+### Maven
+
+`brew install maven`
+
+---
+
+### Eclipse 
+
+visit [Eclipse](https://www.eclipse.org/downloads/packages/installer) and download appropirate installer. 
+
+---
+
+### Python 3
