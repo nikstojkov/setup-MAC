@@ -7,6 +7,8 @@
 ### 4. Eclipse IDE (latest) / Intellij IDEA (latest)
 ### 5. Python 3
 
+---
+
 ### Java (java version "1.8.0_92" or higher)
 
 `brew install java`
