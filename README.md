@@ -5,13 +5,16 @@
 ### 2. MariaDB (10.5)
 ### 3. Maven (lastest)
 ### 4. Eclipse IDE (latest) / Intellij IDEA (latest)
-### 5. Python 3
+### 5. Python 3 (MUST BE 3)
 
 ---
 
 ### Homebrew package manager
 
-`-c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+run in termnial
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
+allows commands such as `brew install wget' 
 
 ---
 
@@ -54,3 +57,10 @@ visit [Eclipse](https://www.eclipse.org/downloads/packages/installer) and downlo
 ---
 
 ### Python 3
+
+`brew install pyenv`
+pyenv allows you to switch between any version of python once installed
+
+`pyenv install 3.9.2 `
+note: '3.9.2' can be substituted for any version as per requirements
+
