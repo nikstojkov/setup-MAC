@@ -1,12 +1,4 @@
 # setup-MAC
-
-## Software requirements
-### 1. Java (java version "1.8.0_92" or higher)
-### 2. MariaDB (10.5)
-### 3. Maven (lastest)
-### 4. Eclipse IDE (latest) / Intellij IDEA (latest)
-### 5. Python 3 (MUST BE 3)
-
 ---
 
 ### Homebrew package manager
@@ -20,7 +12,9 @@ allows commands such as `brew install wget`
 
 ---
 
-### Java (java version "1.8.0_92" or higher)
+## Software requirements
+
+### 1. Java (java version "1.8.0_92" or higher)
 
 `brew install java`
 
@@ -44,7 +38,7 @@ if you get an error, visit [Oracle downloads](https://www.oracle.com/uk/java/tec
 
 ---
 
-### MariaDB
+### 2. MariaDB (10.5)
 
 `brew install mariadb@10.5`
 
@@ -54,22 +48,22 @@ run `brew services stop mariadb@10/5` to stop
 
 ---
 
-### Maven
+### 3. Maven (lastest)
 
 `brew install maven`
 check version 
 `mvn -v`
 
-
 ---
 
-### Eclipse 
+### 4. Eclipse IDE (latest) / Intellij IDEA (latest)
 
 visit [Eclipse](https://www.eclipse.org/downloads/packages/installer) and download appropirate installer. 
 
 ---
 
-### Python 3
+### 5. Python 3 (MUST BE 3)
+
 
 `brew install pyenv`
 pyenv allows you to switch between any version of python once installed
