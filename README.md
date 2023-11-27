@@ -47,7 +47,9 @@ if you get an error, visit [Oracle downloads](https://www.oracle.com/uk/java/tec
 ### MariaDB
 
 `brew install mariadb@10.5`
-run `brew services start mariad@10.5` to verify
+
+run `brew services start mariadb@10.5` to verify
+
 run `brew services stop mariadb@10/5` to stop
 
 ---
