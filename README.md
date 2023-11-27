@@ -14,7 +14,9 @@
 run in termnial
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
-allows commands such as `brew install wget' 
+allows commands such as `brew install wget`
+
+Useful [guide](https://nelson.cloud/how-to-install-older-versions-of-homebrew-packages/) on how to install older versions of homebrew packages.
 
 ---
 
@@ -41,12 +43,16 @@ if you get an error, visit [Oracle downloads](https://www.oracle.com/uk/java/tec
 ### MariaDB
 
 `brew install mariadb@10.5`
+run `brew services start mariad@10.5` to verify
 
 ---
 
 ### Maven
 
 `brew install maven`
+check version 
+`mvn -v`
+
 
 ---
 
@@ -63,4 +69,7 @@ pyenv allows you to switch between any version of python once installed
 
 `pyenv install 3.9.2 `
 note: '3.9.2' can be substituted for any version as per requirements
+
+check version
+`pyenv versions`
 
