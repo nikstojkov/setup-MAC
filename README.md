@@ -16,7 +16,7 @@ run in termnial
 
 allows commands such as `brew install wget`
 
-Useful [guide](https://nelson.cloud/how-to-install-older-versions-of-homebrew-packages/) on how to install older versions of homebrew packages.
+[Useful guide](https://nelson.cloud/how-to-install-older-versions-of-homebrew-packages/) on how to install older versions of homebrew packages.
 
 ---
 
@@ -25,7 +25,10 @@ Useful [guide](https://nelson.cloud/how-to-install-older-versions-of-homebrew-pa
 `brew install java`
 
 create hello.java on desktop
+`cd ~/Desktop`
+`touch hello.java` and open with textedit.app or your favorite note editor.
 
+inside hello.java
 ```
 class HelloWorld {
     public static void main(String[] args) {
@@ -33,10 +36,11 @@ class HelloWorld {
     }
 }
 ```
+save the file.
 
 run `javac hello.java`
 
-if you get an error, visit [Oracle downloads](https://www.oracle.com/uk/java/technologies/downloads/#java21) and download appropriate JDK Dev kit and try again.
+if you get an error, visit [Oracle downloads](https://www.oracle.com/uk/java/technologies/downloads/#java21) and download appropriate JDK Dev kit and try to complie again.
 
 ---
 
@@ -44,6 +48,7 @@ if you get an error, visit [Oracle downloads](https://www.oracle.com/uk/java/tec
 
 `brew install mariadb@10.5`
 run `brew services start mariad@10.5` to verify
+run `brew services stop mariadb@10/5` to stop
 
 ---
 
@@ -72,4 +77,7 @@ note: '3.9.2' can be substituted for any version as per requirements
 
 check version
 `pyenv versions`
+
+run
+`pyenv global 3.9.2`
 
