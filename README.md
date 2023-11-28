@@ -82,7 +82,7 @@ run `java hello.java` and 'Hello, World!' should print in the termnial
 
 ### 2. MariaDB (10.5)
 
-if you have had mysql, run `sudo rm -rf /usr/local/var/mysql/` before running any installs as it will cause no end of errors (still researching why)
+if you have had mysql, run `brew uninstall mysql` and also `sudo rm -rf /usr/local/var/mysql/` before running any further installs as it will cause no end of errors (still researching why, probably because of shared files due to maria being a drop-in replacement)
 
 `brew install mariadb@10.5`
 
