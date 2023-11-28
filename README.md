@@ -50,7 +50,57 @@ brew update
 
 ### 1. Java (java version "1.8.0_92" or higher)
 
-`brew install java`
+`brew install java11`
+
+`sudo ln -sfn /usr/local/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk`
+
+`/usr/libexec/java_home -V`
+to check versions installed
+
+`java -version`
+
+if its the wrong version...
+
+First run `/usr/libexec/java_home -V` which will output something like the following:
+
+```Matching Java Virtual Machines (3):
+1.8.0_05, x86_64:   "Java SE 8" /Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
+1.6.0_65-b14-462, x86_64:   "Java SE 6" /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+1.6.0_65-b14-462, i386: "Java SE 6" /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+
+
+/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
+```
+
+Pick the version you want to be the default (1.6.0_65-b14-462 for arguments sake) then:
+
+```
+export JAVA_HOME=`/usr/libexec/java_home -v 1.6.0_65-b14-462`
+```
+or you can specify just the major version, like:
+```
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+```
+
+Now when you run `java -version` you will see:
+
+```
+java version "1.6.0_65"
+Java(TM) SE Runtime Environment (build 1.6.0_65-b14-462-11M4609)
+Java HotSpot(TM) 64-Bit Server VM (build 20.65-b04-462, mixed mode)
+```
+
+`vi ~/.zshrc`
+
+add the line
+
+`export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0)`
+
+type `esc` 
+
+`:wq`
+
+double check java version
 
 
 
